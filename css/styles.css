@@ -9,17 +9,18 @@ offwhite - #F0F4F3
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
-  font: 0.85rem/1.5 Montserrat, Arial, Helvetica, sans-serif;
+  font: 0.85rem/2 Montserrat, Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
 }
 
-body #bt-left {
-  position: fixed;
+#red-shape {
+ position: fixed;
   bottom: 0px;
   left: 0;
   width: 100vw;
   z-index: -1;
+  height: 10%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,6 +62,10 @@ header#name {
   min-height: 100vh;
   align-content: space-around;
   justify-content: center;
+}
+
+div.main-right section p, div.main-right section h2 {
+  margin: 0 20px;
 }
 
 div#side1 {
@@ -119,4 +124,20 @@ div#side3 a img {
 div#side3 a img:hover {
   background: #DF0033;
   border-radius: 10px;
+}
+
+
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 75%;
+  color: white;
+  text-align: right;
+  z-index: 1;
+}
+
+#footerSpace {
+  height: 100px;
 }
