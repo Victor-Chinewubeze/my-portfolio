@@ -23,13 +23,17 @@ body #bt-left {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
+  font-weight: 100;
   margin: 0;
   color: #574B57;
 }
 
 h2, h4, h6 {
   color: #DF0033;
+}
+
+h1{
+  font-size: 1.5rem;
 }
 
 p, hr {
@@ -53,10 +57,10 @@ header#name {
   display: flex;
   flex-basis: 500px;
   max-width: 250px;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   min-height: 100vh;
-  align-content: space-between;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
 div#side1 {
@@ -74,10 +78,30 @@ div#side1 img {
 }
 
 div#side2, div#side3 {
-  margin-top: 10px;
-  width: 90%;
-  height: 150px;
-  background: blue;
-  border: #DF0033 5px solid;
-  overflow: hidden;
+  width: 100%;
+  min-height: 150px;
+}
+
+div#side2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+
+div#side2 a {
+  display: inline-block;
+  background: #DF0033;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+div#side2 a:hover {
+  box-shadow: 0px 2px 3px #F0F4F3;
+}
+
+div#side2 a.current {
+  box-shadow: 0px 2px 3px #F0F4F3;
 }
