@@ -19,7 +19,7 @@ body {
   bottom: 0px;
   left: 0;
   width: 100vw;
-  z-index: -1;
+  z-index: 1;
   height: 10%;
 }
 
@@ -56,12 +56,16 @@ header#name {
   padding: 0;
   flex: 1;
   display: flex;
-  flex-basis: 500px;
   max-width: 250px;
   flex-flow: row wrap;
   min-height: 100vh;
   align-content: space-around;
   justify-content: center;
+  z-index: 2;
+}
+
+#main .main-right {
+  flex: 2;
 }
 
 div.main-right section p, div.main-right section h2 {
@@ -140,4 +144,11 @@ footer {
 
 #footerSpace {
   height: 100px;
+}
+
+@media(max-width: 768px) {
+  #main .main-right {
+    height: 100vh;
+    overflow: scroll;
+  }
 }
