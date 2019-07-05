@@ -32,7 +32,7 @@ h2, h4, h6 {
   color: #DF0033;
 }
 
-h1{
+h1 {
   font-size: 1.5rem;
 }
 
@@ -57,14 +57,13 @@ header#name {
   display: flex;
   flex-basis: 500px;
   max-width: 250px;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   min-height: 100vh;
-  align-items: center;
-  justify-content: space-around;
+  align-content: space-around;
+  justify-content: center;
 }
 
 div#side1 {
-  margin-top: 10px;
   width: 90%;
   border: #DF0033 5px solid;
   border-radius: 50%;
@@ -104,4 +103,20 @@ div#side2 a:hover {
 
 div#side2 a.current {
   box-shadow: 0px 2px 3px #F0F4F3;
+}
+
+div#side3 {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-end;
+  justify-content: space-evenly;
+}
+
+div#side3 a img {
+  width: 40px;
+}
+
+div#side3 a img:hover {
+  background: #DF0033;
+  border-radius: 10px;
 }
