@@ -22,21 +22,53 @@ body #bt-left {
   z-index: -1;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin: 0;
-  color: #574B57; 
+  color: #574B57;
 }
 
-h2,h4,h6{
-  color: #DF0033; 
+h2, h4, h6 {
+  color: #DF0033;
 }
 
-p, hr{
+p, hr {
   margin: 0;
 }
 
-header#name{
+header#name {
   text-align: center;
   background: #F0F4F3;
+}
+
+#main {
+  display: flex;
+}
+
+#main .sidebar {
+  padding: 10px;
+  background: #574B57;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-basis: 500px;
+  max-width: 250px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-content: space-evenly;
+}
+
+div#picture {
+  margin-top: 10px;
+  width: 90%;
+  border: #DF0033 5px solid;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+div#picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
