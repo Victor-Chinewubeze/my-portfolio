@@ -66,6 +66,8 @@ header#name {
 
 #main .main-right {
   flex: 2;
+  height: 100vh;
+  overflow: scroll;
 }
 
 div.main-right section p, div.main-right section h2 {
@@ -156,6 +158,13 @@ div.subsection a:hover {
   color: #DF0033;
 }
 
+.f-right{
+  float: right;
+}
+
+.subsection ul{
+  list-style-type: none;
+}
 /* Footer */
 footer {
   position: fixed;
@@ -172,7 +181,6 @@ footer {
 
 @media(max-width: 768px) {
   #main .main-right {
-    height: 100vh;
-    overflow: scroll;
+
   }
 }
