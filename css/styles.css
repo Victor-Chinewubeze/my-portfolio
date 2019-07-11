@@ -294,4 +294,11 @@ footer {
 footer{
   width: 65%;
 }
+div#myinfo a {
+  display: block;
+}
+div#myinfo a img {
+display: block;
+margin: auto;
+}
 }
