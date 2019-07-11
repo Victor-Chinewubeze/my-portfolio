@@ -1,8 +1,13 @@
 function preview(certId) {
-  const cert = document.getElementById(certId);
-  if (cert.style.display === 'block') {
-    cert.style.display = 'none';
+  const certList = document.getElementById(certId);
+  const certImage = certList.querySelector('a');
+  const certButton = certList.querySelector('button');
+  if (certImage.style.display === 'block') {
+    certImage.style.display = 'none';
+    certButton.innerHTML = 'Preview';
   } else {
-    cert.style.display = 'block';
+    certImage.style.display = 'block';
+    certButton.innerHTML = 'Collapse';
+
   }
 }
