@@ -8,6 +8,5 @@ function preview(certId) {
   } else {
     certImage.style.display = 'block';
     certButton.innerHTML = 'Collapse';
-
   }
 }
