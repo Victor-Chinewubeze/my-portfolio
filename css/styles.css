@@ -41,6 +41,10 @@ p, hr {
   margin: 0;
 }
 
+a {
+  text
+}
+
 header#name {
   text-align: center;
   background: #F0F4F3;
@@ -153,12 +157,12 @@ div.subsection {
   margin: 20px auto;
 }
 
-div.subsection a {
+div.subsection a{
   color: #574B57;
   text-decoration: none;
 }
 
-div.subsection a:hover {
+div.subsection a:hover,  div#myinfo a:hover {
   color: #DF0033;
 }
 
@@ -205,6 +209,72 @@ ul#certificates li p:hover {
   cursor: pointer;
 }
 
+div#contact {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+div#myinfo {
+/* flex: 1; */
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+align-items: center;
+/* background: #F0F4F3;
+flex-basis: 500px; */
+}
+
+div#myinfo a {
+  color: #574B57;
+  margin: 10px;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div#myinfo a img {
+  width: 25px;
+  margin: 0 5px;
+}
+
+form {
+  padding: 20px;
+  background: #F0F4F3;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-basis: 300px;
+  height: 300px;
+  /* flex: 1; */
+}
+
+form h3 {
+  text-align: center;
+}
+
+form input {
+  width: 100%;
+  height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #574B57;
+}
+
+form input:focus, form input:hover, form textarea:focus, form textarea:hover {
+border-color: #DF0033;
+}
+
+form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #574B57;
+}
 /* Footer */
 
 footer {
