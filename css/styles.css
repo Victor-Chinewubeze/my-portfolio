@@ -166,13 +166,13 @@ div.subsection a:hover,  div#myinfo a:hover {
   color: #DF0033;
 }
 
-.subsection ul {
+.subsection ul, ul#skills {
   margin: 0 20px;
   padding: 0;
   list-style-type: none;
 }
 
-.subsection ul li {
+.subsection ul li, ul#skills li {
   margin-top: 10px;
 }
 
@@ -242,7 +242,7 @@ div#myinfo a img {
 
 form {
   padding: 20px;
-  background: #F0F4F3;
+  /* background: #F0F4F3; */
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
@@ -250,6 +250,7 @@ form {
   flex-basis: 300px;
   height: 300px;
   /* flex: 1; */
+    box-shadow: 0px 0px 7px #574B57;
 }
 
 form h3 {
