@@ -10,3 +10,19 @@ function preview(certId) {
     certButton.innerHTML = 'Collapse';
   }
 }
+
+let submit = false;
+let contactForm = document.getElementById('contact-form');
+contactForm.addEventListener('submit', function () {
+  submit = true;
+  let iFrame = document.getElementById('iFrame');
+  iFrame.addEventListener('load', function () {
+    if (submit) {
+      document.getElementById('submitted').style.display = 'block';
+    }
+    setTimeout (function(){
+      document.getElementById('submitted').style.display = 'none';
+      contactForm.reset();
+    }, 5000);
+  })
+})
