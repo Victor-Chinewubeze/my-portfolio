@@ -276,6 +276,25 @@ form textarea {
   border-radius: 5px;
   border: 1px solid #574B57;
 }
+
+#iFrame {
+  display: none;
+}
+
+#submitted {
+  display: none;
+  position: absolute;
+  background: #574B57;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;  
+  box-shadow: 0px 0px 7px #574B57;
+  transition: .5s;
+  z-index: 3;
+}
+
 /* Footer */
 
 footer {
