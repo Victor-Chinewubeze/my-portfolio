@@ -10,6 +10,7 @@
   <meta name="keywords"
     content="Doctor Vee, Victor CHINEWUBEZE, Dr Vee, Vee, Dr Fee, Full Stack Developer, Decagon, Decadev">
   <meta name="author" content="Victor CHINEWUBEZE">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css" />
   <link rel="shortcut icon" type="image/x-icon" href="../img/icon3.jpg">
 </head>
@@ -49,8 +50,8 @@
     <div class="main-right">
 
       <header id="name">
-        <h1>Victor CHINEWUBEZE</h1>
-        <h2>Contact</h2>
+        <h3>Victor CHINEWUBEZE</h3>
+        <h4>Contact</h4>
       </header>
 
       <section>
@@ -67,11 +68,20 @@
   <p>Your message has been successfully delivered. Doctor Vee will get back to you soon</p>
 </div>
 
-          <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLScQWcikwp98LYmeUjjiHIN4ppGqyXIgRDI7M723RBXzpRdstA/formResponse" target="iFrame" method="POST">
-            <h3 id="formTitle">Send Me a Message</h3>
-            <input type="text" name="entry.2005620554" placeholder="Name..." required>
-            <input type="email" name="entry.1045781291" placeholder="Email..." required>
-            <textarea name="entry.1065046570" placeholder="Message.." required></textarea>
+          <form id="contact-form" class="m-5 bg-light p-5 col-12 col-md-8 col-lg-6 col-xl-4" action="https://docs.google.com/forms/d/e/1FAIpQLScQWcikwp98LYmeUjjiHIN4ppGqyXIgRDI7M723RBXzpRdstA/formResponse" target="iFrame" method="POST">
+            <h5 id="formTitle font-weight-light text-center">Send Me a Message</h5> <br>
+            <div class="form-group">
+              <label for="entry.2005620554">Name: </label>
+              <input type="text" name="entry.2005620554" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="entry.1045781291">Email: </label>
+              <input type="email" name="entry.1045781291" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="entry.1065046570">Message: </label>
+              <textarea name="entry.1065046570" class="form-control" required></textarea>
+            </div>
             <button type="submit">Send Message</button>
           </form>
 
